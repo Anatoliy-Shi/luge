@@ -1,0 +1,16 @@
+.content {
+    display: flex;
+    margin-bottom: 10px;
+}
+.content:nth-child(4n+2) {
+    flex-direction: row-reverse;
+    background-color: #ccc;
+}
+
+h3 {
+    text-align: center;
+}
+
+.textContent {
+    margin: 25px;
+}
