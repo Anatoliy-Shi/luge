@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/luge/static/css/main.5fa5c44f.css",
+    "main.js": "/luge/static/js/main.72dbcbd7.js",
+    "index.html": "/luge/index.html",
+    "main.5fa5c44f.css.map": "/luge/static/css/main.5fa5c44f.css.map",
+    "main.72dbcbd7.js.map": "/luge/static/js/main.72dbcbd7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5fa5c44f.css",
+    "static/js/main.72dbcbd7.js"
+  ]
+}
