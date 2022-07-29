@@ -1,13 +1,12 @@
 .imgContent {
     width: 150px;
 
-
 }
 .header {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     margin-top: 20px;
-    justify-content: center;
+    flex: 0.3 auto;
 }
 
 h1 {

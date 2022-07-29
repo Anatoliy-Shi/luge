@@ -1,12 +1,13 @@
 import s from './Header.module.css'
+import Logo from '../../asset/logo.jpg'
 
 export const Header = () => {
     return (
         <div className={s.header}>
             <img className={s.imgContent}
-                 src="https://w7.pngwing.com/pngs/98/147/png-transparent-luge-sled-slide-olympics-sports-ice-winter-logo-pictogram-speed.png"
+                 src={Logo}
                  alt="logo"/>
-            <h1>Федерация санного спорта</h1>
+            <h1>Федерация санного спорта Москвы</h1>
         </div>
     )
 }

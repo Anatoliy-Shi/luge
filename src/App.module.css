@@ -1,8 +1,11 @@
 .container {
     margin: 0 auto;
     width: 1200px;
+    display: flex;
+    flex-direction: column;
 }
 
 .content {
     display: flex;
+    flex: 0.7 0 auto;
 }
