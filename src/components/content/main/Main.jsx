@@ -1,7 +1,10 @@
-import s from './Content.module.css'
+import s from './Main.module.css'
 
-export const Content = () => {
+
+
+export const Main = () => {
     return (
+        <div className={s.wrapper}>
         <div>
             <h3 className={s.title}>Новость 1</h3>
             <div className={s.content}>
@@ -11,7 +14,7 @@ export const Content = () => {
                     nostrum omnis optio perferendis quisquam, sequi vel veniam veritatis voluptas.</p>
                 <img src="https://imgholder.ru/200x150/8493a8/adb9ca&text=IMAGE+HOLDER&font=kelson" alt="img"/>
             </div>
-            <h3 className={s.title}>Новость 1</h3>
+            <h3 className={s.title}>Новость 2</h3>
             <div className={s.content}>
                 <p className={s.textContent}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aut, cumque cupiditate dicta
                     facilis fugit illo incidunt inventore quas rem, repellat repellendus reprehenderit saepe, sed soluta
@@ -44,6 +47,7 @@ export const Content = () => {
                 <img src="https://imgholder.ru/200x150/8493a8/adb9ca&text=IMAGE+HOLDER&font=kelson" alt="img"/>
             </div>
             <div className={s.loadMore}>загрузить еще</div>
+        </div>
         </div>
     )
 }
