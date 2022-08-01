@@ -1,14 +1,26 @@
 .imgContent {
-    width: 150px;
+    width: 225px;
+    height: 105px;
+    margin-left: 20px;
 
 }
 .header {
     display: flex;
     margin-bottom: 30px;
     margin-top: 20px;
-    flex: 0.3 auto;
+    flex-wrap: wrap;
 }
 
 h1 {
     padding-left: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #faf9ea;
+    font-weight: normal;
+    font-family: 'Ultra', sans-serif;
+    line-height: 42px;
+    text-transform: uppercase;
+    text-shadow: 0 2px rgba(53, 144, 255, 0.34), 2px 2px #4144e7;
 }
+

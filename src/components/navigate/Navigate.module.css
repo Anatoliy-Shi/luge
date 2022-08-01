@@ -1,10 +1,13 @@
 .navigate {
-margin-bottom: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
 .listItem {
     list-style: none;
     padding: 5px;
-
 }
 
 .listItems {
@@ -16,28 +19,27 @@ margin-bottom: 25px;
     text-decoration: none;
     color: black;
 }
+
 .link:active {
+    background-position: 0 0;
     color: #faf9ea;
 }
 
-a.link{
+a.link {
     display: flex;
     justify-content: center;
     align-items: center;
     color: #0c4052;
     padding: 10px 20px;
-    width:102px;
+    width: 102px;
     height: 45px;
-    text-decoration:none;
-    margin:20px auto;
-    background-image: linear-gradient(to left,transparent,transparent 50%, rgb(68, 136, 183) 50%,rgb(106, 154, 255));
-    background-position: 100% 0;
+    text-decoration: none;
+    margin: 20px auto;
     background-size: 200% 100%;
-    transition: all .25s ease-in;
     font: 400 18px tahoma;
+}
 
+.link:hover {
+    color: #3276b8;
 }
-a.link:hover {
-    background-position: 0 0;
-    color:#fff;
-}
+

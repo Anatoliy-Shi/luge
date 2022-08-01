@@ -16,6 +16,7 @@ function App() {
             <div className={s.container}>
                 <Header/>
                 <Navigate/>
+                <div className={s.wrapper}>
                 <Routes>
                     <Route path='/' element={<Main/>} />
                     <Route path='/documents' element={<Docks/>} />
@@ -24,6 +25,7 @@ function App() {
                     <Route path='/history' element={<History/>} />
                     <Route path='/competition-results' element={<Result/>} />
                 </Routes>
+                </div>
                 <Footer/>
             </div>
         </>

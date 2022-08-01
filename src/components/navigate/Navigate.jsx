@@ -7,7 +7,6 @@ export const Navigate = () => {
     };
 
     return (
-
         <nav className={s.navigate}>
             <ul className={s.listItems}>
                 <li className={s.listItem}>
