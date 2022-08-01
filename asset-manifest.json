@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/luge/static/css/main.73175b7c.css",
-    "main.js": "/luge/static/js/main.de031ceb.js",
+    "main.js": "/luge/static/js/main.9c35c885.js",
     "static/media/logo.jpg": "/luge/static/media/logo.81a0b68bbf0699b73616.jpg",
     "index.html": "/luge/index.html",
     "main.73175b7c.css.map": "/luge/static/css/main.73175b7c.css.map",
-    "main.de031ceb.js.map": "/luge/static/js/main.de031ceb.js.map"
+    "main.9c35c885.js.map": "/luge/static/js/main.9c35c885.js.map"
   },
   "entrypoints": [
     "static/css/main.73175b7c.css",
-    "static/js/main.de031ceb.js"
+    "static/js/main.9c35c885.js"
   ]
 }
