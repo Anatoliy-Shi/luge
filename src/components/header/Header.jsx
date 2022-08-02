@@ -8,7 +8,7 @@ export const Header = () => {
             <img className={s.imgContent}
                  src={Logo}
                  alt="logo"/>
-            <h1>Федерация санного спорта Москвы</h1>
+            <h1 className={s.title}>Федерация санного спорта Москвы</h1>
         </div>
     )
 }

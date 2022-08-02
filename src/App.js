@@ -9,16 +9,35 @@ import {News} from "./components/content/news/News";
 import {Team} from "./components/content/team/Team";
 import {History} from "./components/content/history/History";
 import {Result} from "./components/content/competition-results/Result";
+import {useState} from "react";
+
 
 function App() {
+
+    const [visible, setVisible]= useState(false)
+
+    const activeStyle = {
+        color: "#faf9ea",
+    };
+
+    const activeVisible = {
+        display: 'block',
+        transform: 'translateX(0)',
+        background: '#1226ff',
+        'flexDirection': 'column',
+    };
+
     return (
         <>
             <div className={s.container}>
-                <Header/>
-                <Navigate/>
+                <Header />
+                <Navigate visible = {visible}
+                          setVisible= {setVisible}
+                          activeStyle={activeStyle}
+                          activeVisible={activeVisible}/>
                 <div className={s.wrapper}>
                 <Routes>
-                    <Route path='/' element={<Main/>} />
+                    <Route path='/' element={<Main />} />
                     <Route path='/documents' element={<Docks/>} />
                     <Route path='/news' element={<News/>} />
                     <Route path='/team' element={<Team/>} />
@@ -26,7 +45,7 @@ function App() {
                     <Route path='/competition-results' element={<Result/>} />
                 </Routes>
                 </div>
-                <Footer/>
+                <Footer />
             </div>
         </>
 

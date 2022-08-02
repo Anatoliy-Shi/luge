@@ -2,8 +2,8 @@
     width: 225px;
     height: 105px;
     margin-left: 20px;
-
 }
+
 .header {
     display: flex;
     margin-bottom: 30px;
@@ -11,8 +11,9 @@
     flex-wrap: wrap;
 }
 
-h1 {
-    padding-left: 150px;
+.title {
+    margin-left: auto;
+    margin-right: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,5 +23,69 @@ h1 {
     line-height: 42px;
     text-transform: uppercase;
     text-shadow: 0 2px rgba(53, 144, 255, 0.34), 2px 2px #4144e7;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 499px) {
+    .title {
+        display: none;
+    }
+
+    .imgContent {
+        margin: 0 auto;
+        display: flex;
+        width: 138px;
+        height: 62px;
+    }
+}
+
+
+@media only screen
+and (min-device-width: 500px)
+and (max-device-width: 768px) {
+    .title {
+        font-size: 16px;
+        margin:0 auto;
+    }
+
+    .imgContent {
+        display: flex;
+        width: 138px;
+        height: 62px;
+        margin: 5px;
+    }
+
+}
+
+/* Styles */
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+    .title {
+        margin:0 auto;
+        font-size: 24px;
+    }
+
+    .imgContent {
+        width: 150px;
+        height: 70px;
+    }
+
+    /* Styles */
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width: 1024px) {
+    h1 {
+
+    }
+
+    /* Styles */
 }
 

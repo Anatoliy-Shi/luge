@@ -3,9 +3,10 @@
     margin-bottom: 10px;
 
 }
-.content:nth-child(4n+2) {
+.content:nth-of-type(odd) {
     flex-direction: row-reverse;
 }
+
 
 h3 {
     text-align: center;
