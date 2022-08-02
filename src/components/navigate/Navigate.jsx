@@ -39,7 +39,7 @@ export const Navigate = ({visible, activeVisible, setVisible, activeStyle}) => {
                 style={visible ? activeVisible : undefined}
                 className={s.listItems}>
                 <li className={s.listItem}>
-                    <NavLink to='/'
+                    <NavLink to='/luge'
                              style={({isActive}) =>
                                  isActive ? activeStyle : undefined
                              }

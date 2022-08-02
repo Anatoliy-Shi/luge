@@ -37,7 +37,7 @@ function App() {
                           activeVisible={activeVisible}/>
                 <div className={s.wrapper}>
                 <Routes>
-                    <Route path='/' element={<Main />} />
+                    <Route path='/luge' element={<Main />} />
                     <Route path='/documents' element={<Docks/>} />
                     <Route path='/news' element={<News/>} />
                     <Route path='/team' element={<Team/>} />
