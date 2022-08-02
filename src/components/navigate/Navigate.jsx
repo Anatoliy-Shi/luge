@@ -7,12 +7,12 @@ export const Navigate = ({visible, activeVisible, setVisible, activeStyle}) => {
     const [checked, setChecked] = useState(false)
 
     useEffect(() => {
-        if (checked) {
+        if (visible) {
             document.body.classList.add('lock')
         }
             return () => { document.body.classList.remove('lock') };
         },
-        [checked]
+        [visible]
     );
 
 
