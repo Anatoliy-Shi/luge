@@ -53,6 +53,11 @@ and (max-device-width: 768px) {
     a.link {
         justify-content: flex-start;
         color: #a2b749;
+        padding: 0;
+        height: 0;
+    }
+    .listItem {
+        padding: 1px;
     }
 
     .listItems {
@@ -60,11 +65,12 @@ and (max-device-width: 768px) {
         flex-direction: column;
         flex-wrap: wrap;
         align-content: center;
+        justify-content: center;
         top: 0;
         right: 0;
         margin: 0;
         z-index: 1;
-        width: 100vw;
+        width: 50vw;
         height: 100vh;
         background: #1226ff;
         padding: 3em 0 2em;

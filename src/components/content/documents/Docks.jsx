@@ -1,8 +1,9 @@
 import s from './Docks.module.css'
 
-export const Docks = () => {
+export const Docks = ({setVisible, visible}) => {
     return (
-        <div className={s.wrapper}>
+        <div onClick={()=> setVisible(!visible)}
+            className={s.wrapper}>
         <p>Docks..</p>
         </div>
     )

@@ -1,11 +1,11 @@
 import s from './History.module.css'
 
-export const History = () => {
+export const History = ({setVisible, visible}) => {
     return (
-        <>
-            <div className={s.wrapper}>
+            <div
+                onClick={()=> setVisible(!visible)}
+                className={s.wrapper}>
                 <p>History...</p>
             </div>
-        </>
     )
 }

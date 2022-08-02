@@ -14,10 +14,10 @@ const data = [
     },
 ]
 
-export const News = () => {
+export const News = ({setVisible, visible}) => {
 
     return (
-        <div>
+ <div onClick={()=> setVisible(!visible)}>
             {data.map(el => {
                 return <img src={require("./../../../asset/" + el.src)}
                             width={100}

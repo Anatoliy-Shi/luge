@@ -1,8 +1,10 @@
 import s from './Result.module.css'
 
-export const Result = () => {
+export const Result = ({setVisible, visible}) => {
     return (
-        <div className={s.wrapper}>
+        <div
+            onClick={()=> setVisible(!visible)}
+            className={s.wrapper}>
         <p>Result</p>
         </div>
     )

@@ -1,8 +1,8 @@
 import s from './Main.module.css'
 
-export const Main = () => {
+export const Main = ({visible, setVisible}) => {
     return (
-        <div>
+        <div onClick={()=> setVisible(!visible)}>
             <h3 className={s.title}>Новость 1</h3>
             <div className={s.content}>
                 <p className={s.textContent}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aut, cumque cupiditate dicta

@@ -10,7 +10,9 @@ export const Navigate = ({visible, activeVisible, setVisible, activeStyle}) => {
         if (visible) {
             document.body.classList.add('lock')
         }
-            return () => { document.body.classList.remove('lock') };
+            return () => { document.body.classList.remove('lock')
+                // blur.classList.remove('blur')
+        };
         },
         [visible]
     );
@@ -19,11 +21,6 @@ export const Navigate = ({visible, activeVisible, setVisible, activeStyle}) => {
     const onVisible = () => {
         setChecked(!checked)
         setVisible(!visible)
-    }
-
-    const onNotMarker = () => {
-        setChecked(!checked)
-        setVisible(false)
     }
 
     return (
@@ -52,7 +49,7 @@ export const Navigate = ({visible, activeVisible, setVisible, activeStyle}) => {
                              style={({isActive}) =>
                                  isActive ? activeStyle : undefined
                              }
-                             className={s.link}><span onClick={onNotMarker}>Главная</span>
+                             className={s.link}><span onClick={onVisible}>Главная</span>
                     </NavLink>
 
                 </li>
@@ -61,7 +58,7 @@ export const Navigate = ({visible, activeVisible, setVisible, activeStyle}) => {
                              style={({isActive}) =>
                                  isActive ? activeStyle : undefined
                              }
-                             className={s.link}><span onClick={onNotMarker}>Документы</span>
+                             className={s.link}><span onClick={onVisible}>Документы</span>
                     </NavLink>
                 </li>
                 <li className={s.listItem}>
@@ -69,7 +66,7 @@ export const Navigate = ({visible, activeVisible, setVisible, activeStyle}) => {
                              style={({isActive}) =>
                                  isActive ? activeStyle : undefined
                              }
-                             className={s.link}><span onClick={onNotMarker}>Новости</span>
+                             className={s.link}><span onClick={onVisible}>Новости</span>
                     </NavLink>
                 </li>
                 <li className={s.listItem}>
@@ -77,7 +74,7 @@ export const Navigate = ({visible, activeVisible, setVisible, activeStyle}) => {
                              style={({isActive}) =>
                                  isActive ? activeStyle : undefined
                              }
-                             className={s.link}><span onClick={onNotMarker}>Команда</span>
+                             className={s.link}><span onClick={onVisible}>Команда</span>
                     </NavLink>
                 </li>
                 <li className={s.listItem}>
@@ -85,7 +82,7 @@ export const Navigate = ({visible, activeVisible, setVisible, activeStyle}) => {
                              style={({isActive}) =>
                                  isActive ? activeStyle : undefined
                              }
-                             className={s.link}><span onClick={onNotMarker}>История</span>
+                             className={s.link}><span onClick={onVisible}>История</span>
                     </NavLink>
                 </li>
                 <li className={s.listItem}>
@@ -93,7 +90,7 @@ export const Navigate = ({visible, activeVisible, setVisible, activeStyle}) => {
                              style={({isActive}) =>
                                  isActive ? activeStyle : undefined
                              }
-                             className={s.link}><span onClick={onNotMarker}>Результаты соревнований</span>
+                             className={s.link}><span onClick={onVisible}>Результаты соревнований</span>
                     </NavLink>
                 </li>
             </ul>

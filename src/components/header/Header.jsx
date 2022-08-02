@@ -2,9 +2,11 @@ import s from './Header.module.css'
 import Logo from '../../asset/logo.jpg'
 
 
-export const Header = () => {
+export const Header = ({visible, blur}) => {
     return (
-        <div className={s.header}>
+        <div
+            style={visible ? blur : null}
+            className={s.header}>
             <img className={s.imgContent}
                  src={Logo}
                  alt="logo"/>

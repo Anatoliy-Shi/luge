@@ -1,3 +1,7 @@
+.blur {
+    backdrop-filter: blur(2px);
+}
+
 .container {
     overflow: hidden;
     margin: 0 auto;
@@ -6,6 +10,7 @@
     flex-direction: column;
     min-height: 100vh;
 }
+
 
 .wrapper {
     display: flex;

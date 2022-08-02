@@ -23,29 +23,34 @@ function App() {
     const activeVisible = {
         display: 'flex',
         transform: 'translateX(0)',
-
     };
+
+    const blur = {
+        filter: 'blur(3px)'
+    }
 
     return (
         <>
             <div className={s.container}
             >
-                <Header />
+                <Header visible={visible} blur={blur}  />
                 <Navigate visible = {visible}
                           setVisible= {setVisible}
                           activeStyle={activeStyle}
                           activeVisible={activeVisible}/>
-                <div className={s.wrapper}>
+                <div
+                    style={visible ? blur : null}
+                    className={s.wrapper}>
                 <Routes>
-                    <Route path='/luge' element={<Main />} />
-                    <Route path='/documents' element={<Docks/>} />
-                    <Route path='/news' element={<News/>} />
-                    <Route path='/team' element={<Team/>} />
-                    <Route path='/history' element={<History/>} />
-                    <Route path='/competition-results' element={<Result/>} />
+                    <Route path='/luge' element={<Main setVisible={setVisible} visible={visible} />} />
+                    <Route path='/documents' element={<Docks setVisible={setVisible} visible={visible}/>} />
+                    <Route path='/news' element={<News setVisible={setVisible} visible={visible}/>} />
+                    <Route path='/team' element={<Team setVisible={setVisible} visible={visible}/>} />
+                    <Route path='/history' element={<History setVisible={setVisible} visible={visible}/>} />
+                    <Route path='/competition-results' element={<Result setVisible={setVisible} visible={visible}/>} />
                 </Routes>
                 </div>
-                <Footer />
+                <Footer visible={visible} blur={blur} />
             </div>
         </>
 
