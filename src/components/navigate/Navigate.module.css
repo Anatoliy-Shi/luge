@@ -50,7 +50,9 @@ a.link {
 and (max-device-width: 768px) {
 
     a.link {
+        justify-content: flex-start;
         color: #a2b749;
+
     }
     .navigate {
         top: 0;
