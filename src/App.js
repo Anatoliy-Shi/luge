@@ -21,15 +21,15 @@ function App() {
     };
 
     const activeVisible = {
-        display: 'block',
+        display: 'flex',
         transform: 'translateX(0)',
-        background: '#1226ff',
-        'flexDirection': 'column',
+
     };
 
     return (
         <>
-            <div className={s.container}>
+            <div className={s.container}
+            >
                 <Header />
                 <Navigate visible = {visible}
                           setVisible= {setVisible}

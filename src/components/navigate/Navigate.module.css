@@ -45,6 +45,7 @@ a.link {
     color: #3276b8;
 }
 
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
 and (max-device-width: 768px) {
@@ -52,14 +53,47 @@ and (max-device-width: 768px) {
     a.link {
         justify-content: flex-start;
         color: #a2b749;
-
     }
+
+    .listItems {
+        display: none;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        top: 0;
+        right: 0;
+        margin: 0;
+        z-index: 1;
+        width: 100vw;
+        height: 100vh;
+        background: #1226ff;
+        padding: 3em 0 2em;
+        position: absolute;
+        transform: translateX(100%);
+        transition: transform 0.3s cubic-bezier(1, 0.5, 0, 1);
+    }
+
+    .toggle {
+        top: 65px;
+        z-index: 2;
+        right: 30px;
+        height: 4px;
+        padding: 8px 0;
+        cursor: pointer;
+        border-radius: 50%;
+        position: fixed;
+        display: inline-block;
+        width: auto;
+        margin: 0 auto;
+        transition: all .2s ease;
+    }
+
     .navigate {
         top: 0;
         right: 0;
         z-index: 1;
         width: 100%;
-        position: absolute;
+        position: fixed;
     }
 
     .bar {
@@ -84,37 +118,6 @@ and (max-device-width: 768px) {
 
     input[type="checkbox"]:checked ~ span:nth-of-type(3){
         transform: translateY(-8px) rotateZ(-45deg);
-    }
-
-    .listItems {
-        display: none;
-        top: 0;
-        right: 0;
-        margin: 0;
-        z-index: 1;
-        width: 100vw;
-        height: 100vh;
-        flex-direction: column;
-        background: #1226ff;
-        padding: 3em 0 2em;
-        position: absolute;
-        transform: translateX(100%);
-        transition: transform 0.3s cubic-bezier(1, 0.5, 0, 1);
-    }
-
-    .toggle {
-        top: 65px;
-        z-index: 2;
-        right: 30px;
-        height: 4px;
-        padding: 8px 0;
-        cursor: pointer;
-        border-radius: 50%;
-        position: fixed;
-        display: inline-block;
-        width: auto;
-        margin: 0 auto;
-        transition: all .2s ease;
     }
 
 }

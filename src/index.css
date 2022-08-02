@@ -15,3 +15,8 @@
   background: linear-gradient(210deg, rgba(53,144,226,1) 0%, rgba(123,189,235,1) 50%, rgba(16,99,250,1) 100%);
   contain: content;
 }
+
+
+body.lock {
+  overflow: hidden;
+}

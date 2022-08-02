@@ -1,11 +1,19 @@
 import s from './Navigate.module.css'
 import {NavLink} from "react-router-dom";
-import {useState} from "react";
-
+import {useEffect, useState} from "react";
 
 export const Navigate = ({visible, activeVisible, setVisible, activeStyle}) => {
 
     const [checked, setChecked] = useState(false)
+
+    useEffect(() => {
+        if (checked) {
+            document.body.classList.add('lock')
+        }
+            return () => { document.body.classList.remove('lock') };
+        },
+        [checked]
+    );
 
 
     const onVisible = () => {
@@ -24,10 +32,11 @@ export const Navigate = ({visible, activeVisible, setVisible, activeStyle}) => {
                 className={s.toggle}>
                 {visible && <span></span>}
                 <label htmlFor="check">
-                    <input onChange={onVisible}
-                           type="checkbox"
-                           checked={checked}
-                           value=''
+                    <input
+                        onChange={onVisible}
+                        type="checkbox"
+                        checked={checked}
+                        value=''
 
                     />
                     <span onClick={onVisible} className={`${s.bar}  ${s.top}`}></span>
