@@ -1,26 +1,28 @@
 import s from './Navigate.module.css'
 import {NavLink} from "react-router-dom";
-import {useEffect, useState} from "react";
+import {useEffect} from "react";
 
-export const Navigate = ({visible, activeVisible, setVisible, activeStyle}) => {
 
-    const [checked, setChecked] = useState(false)
+export const Navigate = ({visible, activeVisible, setVisible, activeStyle, checked, setChecked}) => {
 
     useEffect(() => {
         if (visible) {
             document.body.classList.add('lock')
         }
             return () => { document.body.classList.remove('lock')
-                // blur.classList.remove('blur')
         };
         },
         [visible]
     );
 
-
     const onVisible = () => {
         setChecked(!checked)
         setVisible(!visible)
+    }
+
+    const onCheckedVisible = () => {
+        setChecked(!checked)
+        setVisible(false)
     }
 
     return (
@@ -36,9 +38,9 @@ export const Navigate = ({visible, activeVisible, setVisible, activeStyle}) => {
                         value=''
 
                     />
-                    <span onClick={onVisible} className={`${s.bar}  ${s.top}`}></span>
-                    <span onClick={onVisible} className={`${s.bar}  ${s.middle}`}></span>
-                    <span onClick={onVisible} className={`${s.bar}  ${s.bottom}`}></span>
+                    <span onClick={onVisible} className={s.bar}></span>
+                    <span onClick={onVisible} className={s.bar}></span>
+                    <span onClick={onVisible} className={s.bar}></span>
                 </label>
             </div>
             <ul
@@ -49,7 +51,7 @@ export const Navigate = ({visible, activeVisible, setVisible, activeStyle}) => {
                              style={({isActive}) =>
                                  isActive ? activeStyle : undefined
                              }
-                             className={s.link}><span onClick={onVisible}>Главная</span>
+                             className={s.link}><span onClick={onCheckedVisible}>Главная</span>
                     </NavLink>
 
                 </li>
@@ -58,7 +60,7 @@ export const Navigate = ({visible, activeVisible, setVisible, activeStyle}) => {
                              style={({isActive}) =>
                                  isActive ? activeStyle : undefined
                              }
-                             className={s.link}><span onClick={onVisible}>Документы</span>
+                             className={s.link}><span onClick={onCheckedVisible}>Документы</span>
                     </NavLink>
                 </li>
                 <li className={s.listItem}>
@@ -66,7 +68,7 @@ export const Navigate = ({visible, activeVisible, setVisible, activeStyle}) => {
                              style={({isActive}) =>
                                  isActive ? activeStyle : undefined
                              }
-                             className={s.link}><span onClick={onVisible}>Новости</span>
+                             className={s.link}><span onClick={onCheckedVisible}>Новости</span>
                     </NavLink>
                 </li>
                 <li className={s.listItem}>
@@ -74,7 +76,7 @@ export const Navigate = ({visible, activeVisible, setVisible, activeStyle}) => {
                              style={({isActive}) =>
                                  isActive ? activeStyle : undefined
                              }
-                             className={s.link}><span onClick={onVisible}>Команда</span>
+                             className={s.link}><span onClick={onCheckedVisible}>Команда</span>
                     </NavLink>
                 </li>
                 <li className={s.listItem}>
@@ -82,7 +84,7 @@ export const Navigate = ({visible, activeVisible, setVisible, activeStyle}) => {
                              style={({isActive}) =>
                                  isActive ? activeStyle : undefined
                              }
-                             className={s.link}><span onClick={onVisible}>История</span>
+                             className={s.link}><span onClick={onCheckedVisible}>История</span>
                     </NavLink>
                 </li>
                 <li className={s.listItem}>
@@ -90,7 +92,7 @@ export const Navigate = ({visible, activeVisible, setVisible, activeStyle}) => {
                              style={({isActive}) =>
                                  isActive ? activeStyle : undefined
                              }
-                             className={s.link}><span onClick={onVisible}>Результаты соревнований</span>
+                             className={s.link}><span onClick={onCheckedVisible}>Результаты соревнований</span>
                     </NavLink>
                 </li>
             </ul>

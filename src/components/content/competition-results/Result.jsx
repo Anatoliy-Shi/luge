@@ -1,9 +1,15 @@
 import s from './Result.module.css'
 
-export const Result = ({setVisible, visible}) => {
+export const Result = ({setVisible, setChecked}) => {
+
+    const onVisible = () => {
+        setVisible(false)
+        setChecked(false)
+    }
+
     return (
         <div
-            onClick={()=> setVisible(!visible)}
+            onClick={onVisible}
             className={s.wrapper}>
         <p>Result</p>
         </div>

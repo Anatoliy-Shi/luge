@@ -1,6 +1,8 @@
 // import s from './News.module.css'
 // import NEWS from "../../../News";
 
+import s from "../documents/Docks.module.css";
+
 const data = [
     {
         "id": "2",
@@ -14,10 +16,16 @@ const data = [
     },
 ]
 
-export const News = ({setVisible, visible}) => {
+export const News = ({setVisible, setChecked}) => {
+    const onVisible = () => {
+        setVisible(false)
+        setChecked(false)
+    }
 
     return (
- <div onClick={()=> setVisible(!visible)}>
+ <div
+     className={s.wrapper}
+     onClick={onVisible}>
             {data.map(el => {
                 return <img src={require("./../../../asset/" + el.src)}
                             width={100}

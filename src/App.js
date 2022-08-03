@@ -14,7 +14,9 @@ import {useState} from "react";
 
 function App() {
 
-    const [visible, setVisible]= useState(false)
+    const [visible, setVisible] = useState(false)
+    const [checked, setChecked] = useState(false)
+
 
     const activeStyle = {
         color: "#faf9ea",
@@ -22,7 +24,8 @@ function App() {
 
     const activeVisible = {
         display: 'flex',
-        transform: 'translateX(0)',
+
+
     };
 
     const blur = {
@@ -33,24 +36,26 @@ function App() {
         <>
             <div className={s.container}
             >
-                <Header visible={visible} blur={blur}  />
-                <Navigate visible = {visible}
-                          setVisible= {setVisible}
+                <Header visible={visible} blur={blur}/>
+                <Navigate visible={visible}
+                          setVisible={setVisible}
+                          checked={checked}
+                          setChecked={setChecked}
                           activeStyle={activeStyle}
                           activeVisible={activeVisible}/>
                 <div
                     style={visible ? blur : null}
                     className={s.wrapper}>
-                <Routes>
-                    <Route path='/luge' element={<Main setVisible={setVisible} visible={visible} />} />
-                    <Route path='/documents' element={<Docks setVisible={setVisible} visible={visible}/>} />
-                    <Route path='/news' element={<News setVisible={setVisible} visible={visible}/>} />
-                    <Route path='/team' element={<Team setVisible={setVisible} visible={visible}/>} />
-                    <Route path='/history' element={<History setVisible={setVisible} visible={visible}/>} />
-                    <Route path='/competition-results' element={<Result setVisible={setVisible} visible={visible}/>} />
-                </Routes>
+                    <Routes>
+                        <Route path='/luge' element={<Main setChecked={setChecked} setVisible={setVisible}/>}/>
+                        <Route path='/documents' element={<Docks setChecked={setChecked} setVisible={setVisible}/>}/>
+                        <Route path='/news' element={<News setChecked={setChecked} setVisible={setVisible}/>}/>
+                        <Route path='/team' element={<Team setChecked={setChecked} setVisible={setVisible}/>}/>
+                        <Route path='/history' element={<History setChecked={setChecked} setVisible={setVisible}/>}/>
+                        <Route path='/competition-results' element={<Result setChecked={setChecked} setVisible={setVisible}/>}/>
+                    </Routes>
                 </div>
-                <Footer visible={visible} blur={blur} />
+                <Footer visible={visible} blur={blur}/>
             </div>
         </>
 

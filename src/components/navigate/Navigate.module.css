@@ -75,7 +75,6 @@ and (max-device-width: 768px) {
         background: #1226ff;
         padding: 3em 0 2em;
         position: absolute;
-        transform: translateX(100%);
         transition: transform 0.3s cubic-bezier(1, 0.5, 0, 1);
     }
 
@@ -87,7 +86,7 @@ and (max-device-width: 768px) {
         padding: 8px 0;
         cursor: pointer;
         border-radius: 50%;
-        position: fixed;
+        position: absolute;
         display: inline-block;
         width: auto;
         margin: 0 auto;
@@ -99,7 +98,7 @@ and (max-device-width: 768px) {
         right: 0;
         z-index: 1;
         width: 100%;
-        position: fixed;
+        position: absolute;
     }
 
     .bar {
@@ -118,7 +117,6 @@ and (max-device-width: 768px) {
 
     input[type="checkbox"]:checked ~ span:nth-of-type(2){
         width: 0;
-        transform: translateY(-8px) rotateZ(-45deg);
     }
 
 
