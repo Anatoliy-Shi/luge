@@ -66,8 +66,8 @@ and (max-device-width: 768px) {
         flex-wrap: wrap;
         align-content: center;
         justify-content: center;
-        top: -1vw;
-        right: -1vh;
+        top: 0;
+        right: 0;
         margin: 0;
         z-index: 1;
         width: 50vw;
@@ -94,8 +94,8 @@ and (max-device-width: 768px) {
     }
 
     .navigate {
-        top: 1vw;
-        right: 1vh;
+        top: 0;
+        right: 0;
         z-index: 1;
         width: 100%;
         /*position: fixed;*/

@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import s from './Arrow.module.css'
 
+
 export const ArrowUp = () => {
 
     const [arrow, setArrow] = useState(false)
@@ -19,7 +20,7 @@ export const ArrowUp = () => {
         if (window.scrollY >= SOME_VALUE && !arrow) {
             setArrow(true)
         } else if (window.scrollY < SOME_VALUE && arrow) {
-            setArrow( false)
+            setArrow(false)
         }
     }
     const onscrollTop = () => {
@@ -27,20 +28,20 @@ export const ArrowUp = () => {
             top: 0,
             behavior: 'auto'
         })
-        setArrow( false)
+        setArrow(false)
     }
 
     const scroll = {
-        bottom: '10px'
-
-
+        bottom: '15px',
     };
 
     return (
-            <div
-                style={arrow ?  scroll : null}
-                onClick={onscrollTop} onChange={handleScroll} className={s.arrow}>
-                hello
-            </div>
+
+        <div
+            style={arrow ? scroll : null}
+            onClick={onscrollTop} onChange={handleScroll} className={s.arrow}>
+            <div className={s.right}></div>
+        </div>
+
     )
 }
