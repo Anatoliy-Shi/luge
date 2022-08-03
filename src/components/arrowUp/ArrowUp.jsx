@@ -6,7 +6,7 @@ export const ArrowUp = () => {
 
     const [arrow, setArrow] = useState(false)
 
-    const SOME_VALUE = '300'
+    const SOME_VALUE = '250'
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll)
