@@ -16,10 +16,9 @@ const data = [
     },
 ]
 
-export const News = ({setVisible, setChecked}) => {
+export const News = ({setVisible}) => {
     const onVisible = () => {
         setVisible(false)
-        setChecked(false)
     }
 
     return (

@@ -66,27 +66,27 @@ and (max-device-width: 768px) {
         flex-wrap: wrap;
         align-content: center;
         justify-content: center;
-        top: 0;
-        right: 0;
+        top: -1vw;
+        right: -1vh;
         margin: 0;
         z-index: 1;
         width: 50vw;
         height: 100vh;
         background: #1226ff;
         padding: 3em 0 2em;
-        position: absolute;
+        position: fixed;
         transition: transform 0.3s cubic-bezier(1, 0.5, 0, 1);
     }
 
     .toggle {
-        top: 65px;
+        top: 20px;
         z-index: 2;
         right: 30px;
         height: 4px;
         padding: 8px 0;
         cursor: pointer;
         border-radius: 50%;
-        position: absolute;
+        position: fixed;
         display: inline-block;
         width: auto;
         margin: 0 auto;
@@ -94,11 +94,11 @@ and (max-device-width: 768px) {
     }
 
     .navigate {
-        top: 0;
-        right: 0;
+        top: 1vw;
+        right: 1vh;
         z-index: 1;
         width: 100%;
-        position: absolute;
+        position: fixed;
     }
 
     .bar {

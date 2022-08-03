@@ -1,9 +1,9 @@
 import s from './History.module.css'
 
-export const History = ({setVisible, setChecked}) => {
+export const History = ({setVisible}) => {
     const onVisible = () => {
         setVisible(false)
-        setChecked(false)
+
     }
     return (
             <div

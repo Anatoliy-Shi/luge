@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 import {useEffect} from "react";
 
 
-export const Navigate = ({visible, activeVisible, setVisible, activeStyle, checked, setChecked}) => {
+export const Navigate = ({visible, activeVisible, setVisible, activeStyle}) => {
 
     useEffect(() => {
         if (visible) {
@@ -16,12 +16,10 @@ export const Navigate = ({visible, activeVisible, setVisible, activeStyle, check
     );
 
     const onVisible = () => {
-        setChecked(!checked)
         setVisible(!visible)
     }
 
     const onCheckedVisible = () => {
-        setChecked(!checked)
         setVisible(false)
     }
 
@@ -34,7 +32,7 @@ export const Navigate = ({visible, activeVisible, setVisible, activeStyle, check
                     <input
                         onChange={onVisible}
                         type="checkbox"
-                        checked={checked}
+                        checked={visible}
                         value=''
 
                     />

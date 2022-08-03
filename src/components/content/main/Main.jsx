@@ -1,14 +1,11 @@
 import s from './Main.module.css'
 
-export const Main = ({setVisible, setChecked}) => {
+export const Main = ({setVisible}) => {
     const onVisible = () => {
         setVisible(false)
-        setChecked(false)
     }
     return (
         <div onClick={onVisible}>
-
-
         <div className={s.wrapper} >
             <h3 className={s.title}>Новость 1</h3>
             <div className={s.content}>

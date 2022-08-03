@@ -1,9 +1,8 @@
 import s from './Team.module.css'
 
-export const Team = ({setVisible, setChecked}) => {
+export const Team = ({setVisible}) => {
     const onVisible = () => {
         setVisible(false)
-        setChecked(false)
     }
     return (
         <div onClick={onVisible}

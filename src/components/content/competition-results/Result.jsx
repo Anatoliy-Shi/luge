@@ -1,10 +1,9 @@
 import s from './Result.module.css'
 
-export const Result = ({setVisible, setChecked}) => {
+export const Result = ({setVisible}) => {
 
     const onVisible = () => {
         setVisible(false)
-        setChecked(false)
     }
 
     return (
