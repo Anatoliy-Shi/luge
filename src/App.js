@@ -10,12 +10,12 @@ import {Team} from "./components/content/team/Team";
 import {History} from "./components/content/history/History";
 import {Result} from "./components/content/competition-results/Result";
 import {useState} from "react";
+import {ArrowUp} from "./components/arrowUp/ArrowUp";
 
 
 function App() {
 
     const [visible, setVisible] = useState(false)
-
 
 
     const activeStyle = {
@@ -24,7 +24,6 @@ function App() {
 
     const activeVisible = {
         display: 'flex',
-
     };
 
     const blur = {
@@ -32,6 +31,7 @@ function App() {
     }
 
     return (
+        <>
             <div className={s.container}>
                 <Header visible={visible} blur={blur}/>
                 <Navigate visible={visible}
@@ -43,15 +43,17 @@ function App() {
                     className={s.wrapper}>
                     <Routes>
                         <Route path='/luge' element={<Main setVisible={setVisible}/>}/>
-                        <Route path='/documents' element={<Docks  setVisible={setVisible}/>}/>
-                        <Route path='/news' element={<News  setVisible={setVisible}/>}/>
-                        <Route path='/team' element={<Team  setVisible={setVisible}/>}/>
-                        <Route path='/history' element={<History  setVisible={setVisible}/>}/>
-                        <Route path='/competition-results' element={<Result  setVisible={setVisible}/>}/>
+                        <Route path='/documents' element={<Docks setVisible={setVisible}/>}/>
+                        <Route path='/news' element={<News setVisible={setVisible}/>}/>
+                        <Route path='/team' element={<Team setVisible={setVisible}/>}/>
+                        <Route path='/history' element={<History setVisible={setVisible}/>}/>
+                        <Route path='/competition-results' element={<Result setVisible={setVisible}/>}/>
                     </Routes>
                 </div>
                 <Footer visible={visible} blur={blur}/>
             </div>
+            <ArrowUp/>
+        </>
     );
 }
 

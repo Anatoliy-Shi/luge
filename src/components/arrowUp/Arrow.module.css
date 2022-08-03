@@ -1,0 +1,20 @@
+.arrow {
+    bottom: -80px;
+    right: 20px;
+    color: red;
+    width: 100px;
+    height: 60px;
+    border: 3px solid #BFE2FF;
+    background: #f7f7f7;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 5px;
+    transition: all .7s ease-in-out;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    z-index: 1;
+}
+

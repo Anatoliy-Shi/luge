@@ -86,7 +86,7 @@ and (max-device-width: 768px) {
         padding: 8px 0;
         cursor: pointer;
         border-radius: 50%;
-        position: fixed;
+        position: absolute;
         display: inline-block;
         width: auto;
         margin: 0 auto;
@@ -98,7 +98,7 @@ and (max-device-width: 768px) {
         right: 1vh;
         z-index: 1;
         width: 100%;
-        position: fixed;
+        /*position: fixed;*/
     }
 
     .bar {
