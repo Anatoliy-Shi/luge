@@ -50,9 +50,9 @@ function App() {
                         <Route path='/competition-results' element={<Result setVisible={setVisible}/>}/>
                     </Routes>
                 </div>
-                <ArrowUp/>
                 <Footer visible={visible} blur={blur}/>
             </div>
+            <ArrowUp/>
         </>
     );
 }
