@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/luge/static/css/main.03178c82.css",
-    "main.js": "/luge/static/js/main.05617657.js",
+    "main.css": "/luge/static/css/main.cc3fbdde.css",
+    "main.js": "/luge/static/js/main.dfb51eeb.js",
+    "static/media/aerodinamic.jpg": "/luge/static/media/aerodinamic.eca48cd1a50361ce0708.jpg",
     "static/media/bgc.png": "/luge/static/media/bgc.040a4ff22f4eac788c6a.png",
     "static/media/logo.jpg": "/luge/static/media/logo.81a0b68bbf0699b73616.jpg",
     "index.html": "/luge/index.html",
-    "main.03178c82.css.map": "/luge/static/css/main.03178c82.css.map",
-    "main.05617657.js.map": "/luge/static/js/main.05617657.js.map"
+    "main.cc3fbdde.css.map": "/luge/static/css/main.cc3fbdde.css.map",
+    "main.dfb51eeb.js.map": "/luge/static/js/main.dfb51eeb.js.map"
   },
   "entrypoints": [
-    "static/css/main.03178c82.css",
-    "static/js/main.05617657.js"
+    "static/css/main.cc3fbdde.css",
+    "static/js/main.dfb51eeb.js"
   ]
 }
