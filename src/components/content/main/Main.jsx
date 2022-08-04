@@ -1,4 +1,5 @@
 import s from './Main.module.css'
+import aerodinamic from './../../../asset/aerodinamic.jpg'
 
 export const Main = ({setVisible}) => {
     const onVisible = () => {
@@ -8,15 +9,13 @@ export const Main = ({setVisible}) => {
         <div onClick={onVisible}>
             <div className={s.wrapper}>
                 <div>
-                    <img className={s.img} src="https://imgholder.ru/200x150/8493a8/adb9ca&text=IMAGE+HOLDER&font=kelson" alt="img"/>
+                    <img className={s.img} src={aerodinamic} alt="img"/>
                 </div>
                 <div className={s.content}>
-                    <p className={s.title}>Новость 1</p>
-                    <p className={s.textContent}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam
-                        aut, cumque cupiditate dicta facilis fugit illo incidunt inventore quas rem, repellat
-                        repellendus reprehenderit saepe, sed soluta tempora totam vitae? Ab amet blanditiis commodi
-                        consequuntur delectus deserunt eius excepturi iusto nostrum omnis optio perferendis quisquam,
-                        sequi vel veniam veritatis voluptas.</p>
+                    <p className={s.title}>Аэродинамика</p>
+                    <p className={s.textContent}>Аэродинамика в санном спорте – это совокупности технических (положение тела для оптимизации скорости, контакт полозьев с ледяным покрытием) и физических моментов (подготовка и температура полозьев, обтекаемые комбинезоны/обувь), которые помогают саночникам эффективнее преодолевать сопротивление воздуха и снижать потери времени при спуске.
+                        <br/>
+                        Эти компоненты дарят бесценные тысячные и сотые доли секунд, определяющие победу.</p>
                 </div>
             </div>
             <div className={s.wrapper}>
@@ -24,12 +23,10 @@ export const Main = ({setVisible}) => {
                     <img className={s.img} src="https://imgholder.ru/200x150/8493a8/adb9ca&text=IMAGE+HOLDER&font=kelson" alt="img"/>
                 </div>
                 <div className={s.content}>
-                    <p className={s.title}>Новость 1</p>
-                    <p className={s.textContent}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam
-                        aut, cumque cupiditate dicta facilis fugit illo incidunt inventore quas rem, repellat
-                        repellendus reprehenderit saepe, sed soluta tempora totam vitae? Ab amet blanditiis commodi
-                        consequuntur delectus deserunt eius excepturi iusto nostrum omnis optio perferendis quisquam,
-                        sequi vel veniam veritatis voluptas.</p>
+                    <p className={s.title}>Спринт</p>
+                    <p className={s.textContent}>Спринт – с 2016 года новая дисциплина в санном спорте, вошедшая в программу чемпионатов мира.
+                        <br/>
+                        Дистанция в спринте является укороченной, измерение времени саночника начинается не со старта, а после прохождения им начального отрезка (от 100 до 150 метров), а победитель определяется по результатам единственной попытки.</p>
                 </div>
             </div>
             <div className={s.wrapper}>
@@ -37,12 +34,25 @@ export const Main = ({setVisible}) => {
                     <img className={s.img} src="https://imgholder.ru/200x150/8493a8/adb9ca&text=IMAGE+HOLDER&font=kelson" alt="img"/>
                 </div>
                 <div className={s.content}>
-                    <p className={s.title}>Новость 1</p>
-                    <p className={s.textContent}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam
-                        aut, cumque cupiditate dicta facilis fugit illo incidunt inventore quas rem, repellat
-                        repellendus reprehenderit saepe, sed soluta tempora totam vitae? Ab amet blanditiis commodi
-                        consequuntur delectus deserunt eius excepturi iusto nostrum omnis optio perferendis quisquam,
-                        sequi vel veniam veritatis voluptas.</p>
+                    <p className={s.title}>Эстафета</p>
+                    <p className={s.textContent}>Эстафета - это самый непредсказуемый вид соревнований в санном спорте.
+                        <br/>
+                        Она впервые вошла в программу Олимпийских игр в Сочи и относится к командным соревнованиям.
+                        <br/>
+                        Эта дисциплина была уже успешно опробована на чемпионатах мира.
+                        <br/>
+                        На самом деле, история этого вида соревнований не такая уж и новая - впервые подобная эстафета была проведена еще в 1989 году.
+                        <br/>
+                        Четыре спортсмена принимают участие в командной гонке, а сам заезд распределен на три этапа.
+                        В первом заезде участвуют одиночные саночники (мужчина и женщина); а завершает соревнования мужская двойка.
+                        <br/>
+                        Сначала проходит трассу одиночная спортсменка, которая должна передать эстафету, коснувшись специального устройства, после чего открывается воротный створ.
+                        <br/>
+                        Затем свой заезд начинает мужчина- саночник , который также через автоматизированную систему передает эстафету мужской двойке.
+                        <br/>
+                        Время прохождения на всех этапах суммируется, и получается итоговый результат команды.
+                        <br/>
+                        Побеждает та команда , которая покажет самый быстрый результат .</p>
                 </div>
             </div>
             <div className={s.wrapper}>
@@ -50,12 +60,24 @@ export const Main = ({setVisible}) => {
                     <img className={s.img} src="https://imgholder.ru/200x150/8493a8/adb9ca&text=IMAGE+HOLDER&font=kelson" alt="img"/>
                 </div>
                 <div className={s.content}>
-                    <p className={s.title}>Новость 1</p>
-                    <p className={s.textContent}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam
-                        aut, cumque cupiditate dicta facilis fugit illo incidunt inventore quas rem, repellat
-                        repellendus reprehenderit saepe, sed soluta tempora totam vitae? Ab amet blanditiis commodi
-                        consequuntur delectus deserunt eius excepturi iusto nostrum omnis optio perferendis quisquam,
-                        sequi vel veniam veritatis voluptas.</p>
+                    <p className={s.title}>Соревнования</p>
+                    <p className={s.textContent}>Олимпийская программа по санному спорту включают в себя 4 дисциплины:⠀
+                        <br/>
+                        одиночные заезды среди мужчин, одиночные заезды среди женщин,
+                        двойки среди мужчин и эстафета с участием представителей перечисленных видов программы.
+                        <br/>
+                        На Кубке и Чемпионате Мира и на других международных соревнованиях каждый участник совершает по две попытки.⠀
+                        <br/>
+                        На Олимпийских Играх одиночники выполняют по четыре попытки, двойки имеют две попытки.⠀
+                        <br/>
+                        Гонщик или команда, показавшая наименьшее суммарное время, становится победителем
+                        <br/>
+                        Старт имеет решающее значение и является единственным участком дистанции, на котором спортсмен контролирует ускорение, набираемое санями⠀
+                        <br/>
+                        Обычно считается, что 1/10 секунды, выигранная на стартовом участке, гарантирует преимущество в 3/10 секунды на финише⠀
+                        <br/>
+                        Используя поручни по боками от стартового створа, саночник раскачивает сани вперед-назад чтобы сильнее оттолкнуться перед тем, как начать движение по дистанции.⁣⁣⠀
+                        После отталкивания спортсмен старается разогнать сани, отталкиваясь ото льда шипованными перчатками.</p>
                 </div>
             </div>
             <div className={s.wrapper}>
@@ -63,12 +85,22 @@ export const Main = ({setVisible}) => {
                     <img className={s.img} src="https://imgholder.ru/200x150/8493a8/adb9ca&text=IMAGE+HOLDER&font=kelson" alt="img"/>
                 </div>
                 <div className={s.content}>
-                    <p className={s.title}>Новость 1</p>
-                    <p className={s.textContent}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam
-                        aut, cumque cupiditate dicta facilis fugit illo incidunt inventore quas rem, repellat
-                        repellendus reprehenderit saepe, sed soluta tempora totam vitae? Ab amet blanditiis commodi
-                        consequuntur delectus deserunt eius excepturi iusto nostrum omnis optio perferendis quisquam,
-                        sequi vel veniam veritatis voluptas.</p>
+                    <p className={s.title}>Сани</p>
+                    <p className={s.textContent}>Спортивные сани состоят из двух полозьев, сидения (обтекателя) и двух ручек для спортсмена.
+                        <br/>
+                        Сидение крепится на двух перемычках(кронштейнах), соединяющих полозья.⠀
+                        <br/>
+                        Оно имеет аэродинамичную фиберглассовую оболочку.
+                        <br/>
+                        Ограничения по весу саней для одиночек и двоек составляют 23 кг и 27 кг соответственно.
+                        <br/>
+                        Стальные лезвия полозьев являются единственной частью саней, которая контактирует со льдом.
+                        <br/>
+                        Эти лезвия, вернее даже сталь, из которой они изготовлены, считается самой важной частью соревновательных саней.
+                        <br/>
+                        Спортсмены используют наждачку и всевозможные притирки для полировки и подготовки лезвий полозьев в зависимости от трассы и состояния льда.
+                        <br/>
+                        Управление санями происходит за счёт изменения положения тела спортсмена.</p>
                 </div>
             </div>
             <div className={s.wrapper}>
@@ -76,16 +108,102 @@ export const Main = ({setVisible}) => {
                     <img className={s.img} src="https://imgholder.ru/200x150/8493a8/adb9ca&text=IMAGE+HOLDER&font=kelson" alt="img"/>
                 </div>
                 <div className={s.content}>
-                    <p className={s.title}>Новость 1</p>
-                    <p className={s.textContent}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam
-                        aut, cumque cupiditate dicta facilis fugit illo incidunt inventore quas rem, repellat
-                        repellendus reprehenderit saepe, sed soluta tempora totam vitae? Ab amet blanditiis commodi
-                        consequuntur delectus deserunt eius excepturi iusto nostrum omnis optio perferendis quisquam,
-                        sequi vel veniam veritatis voluptas.</p>
+                    <p className={s.title}>Трасса</p>
+                    <p className={s.textContent}>
+                        Трасса для санного спорта состоит из желоба и виражей, имеет ледовое покрытие и строится по специальному проекту.
+                        <br/>
+                        Санные трассы разделяются на имеющие или не имеющие холодильные установки.
+                        <br/>
+                        Минимальная длина трассы для мужчин на одноместных санях – 1000м, а для женщин – 750м.
+                        <br/>
+                        Максимальная длина трассы для мужчин на одноместных санях должна быть не больше 1300м, а для женщин – 1050м.
+                        <br/>
+                        При проведении международных соревнований и по решению главного судьи трасса может быть сокращена до 400метров.
+                        <br/>
+                        Средний уклон составляет от 8% до 11%. Виражи на трассе проектируются таким образом, чтобы перегрузки спортсменов при прохождении не превышали 4,5G.</p>
+                </div>
+            </div>
+            <div className={s.wrapper}>
+                <div>
+                    <img className={s.img} src="https://imgholder.ru/200x150/8493a8/adb9ca&text=IMAGE+HOLDER&font=kelson" alt="img"/>
+                </div>
+                <div className={s.content}>
+                    <p className={s.title}>Cпециальная подготовка</p>
+                    <p className={s.textContent}>
+                        Санный спорт – технически сложный вид.
+                        <br/>
+                        При спуске на трассе саночники испытывают  огромные #ерегрузки .
+                        <br/>
+                        К примеру, у космонавтов при выходе на орбиту перегрузка достигает 3,5G (G – величина измерения ускорения), а при спуске – 4G.
+                        <br/>
+                        У станочников изначально идёт перегрузка в 4G.
+                        <br/>
+                        В реальности, с учетом возможных ошибок спортсменов и качества льда, она может быть существенно выше.
+                        <br/>
+                        Лопинг (или лопинг-качели) предназначен для тренировки в условиях перегрузки, тренировки вестибулярного аппарата саночников.
+                        <br/>
+                        Тренажером предусмотрено вращение в двух плоскостях одновременно или в одной плоскости в режиме ограничения вращения во второй плоскости.⠀
+                        <br/>
+                        Вращение на тренажере создает нагрузки до 3G.
+                        <br/>
+                        Вращение создается силами спортсмена.
+                        <br/>
+                        Тренажер предназначен для одного спортсмена. </p>
+                </div>
+            </div>
+            <div className={s.wrapper}>
+                <div>
+                    <img className={s.img} src="https://imgholder.ru/200x150/8493a8/adb9ca&text=IMAGE+HOLDER&font=kelson" alt="img"/>
+                </div>
+                <div className={s.content}>
+                    <p className={s.title}>Специальная физическая подготовка</p>
+                    <p className={s.textContent}>
+                        (СФП) — укрепление органов и систем (дыхательной, сердечно-сосудистой, мышечной), повышение их функциональных возможностей, развитие двигательных качеств строго применительно к требованиям избранного вида спорта.
+                        <br/>
+                        Направлена на развитие физических способностей, отвечающих особенности избранного вида спорта и на максимально возможную степень их развития.
+                        <br/>
+                        Основными средствами СФП спортсмена являются соревновательные и специально-подготовительные упражнения .⠀
+                        <br/>
+                        СФП позволяет спортсмену достигнуть необходимого уровня для соревновательного успеха.</p>
+                </div>
+            </div>
+            <div className={s.wrapper}>
+                <div>
+                    <img className={s.img} src="https://imgholder.ru/200x150/8493a8/adb9ca&text=IMAGE+HOLDER&font=kelson" alt="img"/>
+                </div>
+                <div className={s.content}>
+                    <p className={s.title}>Общая физическая подготовка</p>
+                    <p className={s.textContent}>
+                        Система упражнений для укрепления здоровья и развития наиболее полезных и необходимых в жизни физических качеств, таких как:
+                        ловкость, координация, выносливость, гибкость, скорость, сила, направленных на всестороннее физическое развитие человека.
+                        <br/>
+                        Целью ОФП является #укрепление здоровья и закладывание основы для дальнейшего развития в любом из спортивных направлений.
+                        <br/>
+                        Польза ОФП:
+                        <br/>
+                        * Укрепление здоровья
+                        <br/>
+                        * Развитие всесторонних физических качеств
+                        <br/>
+                        * Увеличение сопротивляемости к неблагоприятным условиям
+                        <br/>
+                        * Укрепление дыхательной, сердечно-сосудистой, мышечной систем
+                        <br/>
+                        * Обеспечение комплексного развития всего тела
+                        <br/>
+                        * Повышение уровня физических возможностей
+                        <br/>
+                        * Отсутствие возрастных или половых ограничении⠀
+                        <br/>
+                        * Повышение функциональных возможностей
+                        <br/>
+                        * Повышение общей работоспособности
+                        <br/>
+                        * Создание основы для специальной физической подготовки и достижения высоких результатов в выбранной сфере деятельности (трудовой, военной) или виде спорта.</p>
                 </div>
             </div>
 
-            <div className={s.loadMore}>загрузить еще</div>
+            {/*<div className={s.loadMore}>загрузить еще</div>*/}
         </div>
     )
 }
